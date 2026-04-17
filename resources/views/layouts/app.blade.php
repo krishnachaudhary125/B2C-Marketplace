@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>B2C Marketplace</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>B2C-Marketplace</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    @include('partials.header')
-    <div class="main-container">
+<body class="bg-[#f1f3f3]">
+
+    <div class="mx-13 my-5">
+
+        @include('partials.header')
+
+        <div class="mt-5">
+
+            @yield('app')
+
+        </div>
+
+        @include('partials.footer')
 
     </div>
-    @include('partials.footer')
+
 </body>
 
 </html>
