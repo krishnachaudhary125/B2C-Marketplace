@@ -22,9 +22,9 @@
 
         </div>
 
-        @include('partials.footer')
-
     </div>
+
+    @include('partials.footer')
 
 </body>
 
