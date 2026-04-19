@@ -12,7 +12,7 @@
 
 <body class="bg-[#f1f3f3]">
 
-    <div class="mx-13 my-5">
+    <div class="mx-5 my-5">
 
         @include('partials.header')
 
