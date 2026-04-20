@@ -35,4 +35,43 @@
 
     </div>
 
+    {{-- Category --}}
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 items-start">
+        {{-- Temporary static data --}}
+        @php
+            $categories = [
+                ['name' => 'Vegetable', 'sub' => 'Local market', 'icon' => '🥦'],
+                ['name' => 'Snacks & Breads', 'sub' => 'In store delivery', 'icon' => '🥐'],
+                ['name' => 'Fruits', 'sub' => 'Chemical free', 'icon' => '🍊'],
+                ['name' => 'Chicken', 'sub' => 'Frozen meal', 'icon' => '🍗'],
+                ['name' => 'Milk & Dairy', 'sub' => 'Process food', 'icon' => '🧀'],
+            ];
+        @endphp
+
+        @foreach ($categories as $cat)
+
+            <a href="#">
+                <div
+                    class="bg-white rounded-2xl p-4 flex flex-col justify-between min-h-[110px] border border-gray-100 cursor-pointer hover:-translate-y-1 hover:shadow-lg hover:shadow-[#064d4f]/10 transition-all">
+
+                    <div class="">
+                        <h3 class="text-sm font-bold text-gray-800 leading-tight">{{ $cat['name'] }}</h3>
+                        <p class="text-xs text-gray-400 mt-0 5">{{ $cat['sub'] }}</p>
+                    </div>
+                    <div class="self-end text-4xl leading-none">{{ $cat['icon'] }}</div>
+                </div>
+            </a>
+
+        @endforeach
+
+        {{-- See all category --}}
+        <a href="#"
+            class="bg-[#c5e84a] hover:bg-[#d4f55a] rounded-2xl flex flex-col items-center justify-center gap-2 min-h-[110px] cursor-pointer hover:-translate-y-1 transition-all col-span-1">
+            <div class="w-9 h-9 bg-white rounded-full flex items-center justify-center text-lg font-bold text-gray-800">→
+            </div>
+            <span class="text-xs font-semibold text-gray-800">See all</span>
+        </a>
+
+    </div>
+
 @endsection
