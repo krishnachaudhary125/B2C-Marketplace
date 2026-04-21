@@ -18,8 +18,8 @@
 
         {{-- Desktop Menu --}}
         <ul class="gap-5 justify-between text-white hidden md:flex">
-            <li class="cursor-pointer">Home</li>
-            <li class="cursor-pointer">About</li>
+            <li class="cursor-pointer"><a href="#home">Home</a></li>
+            <li class="cursor-pointer"><a href="#product">Product</a></li>
             <li class="cursor-pointer">Contact</li>
             <li><i class="fa fa-shopping-cart cursor-pointer"></i></li>
             <li><i class="fa fa-user cursor-pointer"></i></li>
