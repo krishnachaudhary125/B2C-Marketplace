@@ -63,7 +63,7 @@
 
                         <div class="">
                             <h3 class="text-sm font-bold text-gray-800 leading-tight">{{ $cat['name'] }}</h3>
-                            <p class="text-xs text-gray-400 mt-0 5">{{ $cat['sub'] }}</p>
+                            <p class="text-xs text-gray-400 mt-0.5">{{ $cat['sub'] }}</p>
                         </div>
                         <div class="self-end text-4xl leading-none">{{ $cat['icon'] }}</div>
                     </div>
@@ -85,7 +85,7 @@
     </section>
 
     <section id="product">
-        <div class="h-100 product"></div>
+        <div class="product"></div>
     </section>
 
 @endsection
